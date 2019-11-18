@@ -1,0 +1,60 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 335
+  Width = 591
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=APS_BI'
+      'SERVER=(local)'
+      'OSAuthent=Yes'
+      'ApplicationName=Enterprise/Architect/Ultimate'
+      'Workstation=DESKTOP-CLHBEUB'
+      'MARS=yes'
+      'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 408
+    Top = 136
+  end
+  object fcxDataSource1: TfcxDataSource
+    Version = '2.9'
+    DataSet = fcxDBDataSet1
+    Fields = <>
+    Left = 351
+    Top = 48
+  end
+  object fcxDBDataSet1: TfcxDBDataSet
+    Version = '2.9'
+    DataSet = FDQuery1
+    Left = 504
+    Top = 56
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      #9'select '
+      #9#9#9'ocorrencia.CD_Ocorrencia as ID,'
+      #9#9#9'fiscal.NM_Fiscal as Fiscal,'
+      #9#9#9'problema.NM_Problema as Problema,'
+      #9#9#9'local_.NM_Continente as Continente,'
+      #9#9#9'local_.NM_Pais as Pais,'
+      #9#9#9'local_.NM_Estado as Estado,'
+      #9#9#9'local_.NM_Cidade as Cidade,'
+      #9#9#9'data_.DT_Dia as Dia,'
+      #9#9#9'data_.DT_Mes as Mes,'
+      #9#9#9'data_.DT_Ano as Ano'
+      #9#9#9#9'from'
+      #9#9#9#9'Ocorrencias ocorrencia,'
+      #9#9#9#9'Fiscais fiscal,'
+      #9#9#9#9'Problemas problema,'
+      #9#9#9#9'Locais local_,'
+      #9#9#9#9'Datas data_'
+      #9#9#9#9#9'where'
+      #9#9#9#9#9#9'ocorrencia.CD_Fiscal = fiscal.CD_Fiscal and'
+      #9#9#9#9#9#9'ocorrencia.CD_Problema = problema.CD_Problema and'
+      #9#9#9#9#9#9'local_.CD_Local = ocorrencia.CD_Ocorrencia and'
+      #9#9#9#9#9#9'data_.CD_Data = ocorrencia.CD_Ocorrencia')
+    Left = 472
+    Top = 216
+  end
+end

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/02 21:36:05.000.448,=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 21:41:44.000.474,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\APS_BI.dfm=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/11/02 21:41:44.000.474,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\APS_BI.pas=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 21:43:44.000.382,=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 21:44:21.000.128,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\AcessarDados.dfm=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/11/02 21:44:21.000.128,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\AcessarDados.pas=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/02 22:10:37.000.491,C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\BI_APS.dproj=C:\Users\Marcos\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
